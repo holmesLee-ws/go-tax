@@ -15,7 +15,7 @@ const LEVELS = ["Explain", "Apply", "Evaluate", "Develop"];
 const FIELDS = ["선수", "핵심 질문", "목표", "만들어 볼 것", "국내 근거", "글로벌 비교"];
 const OPTIONAL = ["경계·연결"];
 // 공식 기관 도메인(R11 정본). 하위 도메인 포함.
-const OFFICIAL_DOMAINS = ["law.go.kr", "nts.go.kr", "hometax.go.kr", "wetax.go.kr", "tt.go.kr", "moef.go.kr", "q-net.or.kr", "oecd.org", "doi.org", "un.org", "europa.eu", "irs.gov", "uscode.house.gov", "nta.go.jp", "gov.uk"];
+const OFFICIAL_DOMAINS = ["law.go.kr", "nts.go.kr", "hometax.go.kr", "wetax.go.kr", "tt.go.kr", "moef.go.kr", "q-net.or.kr", "oecd.org", "doi.org", "un.org", "europa.eu", "irs.gov", "uscode.house.gov", "nta.go.jp", "gov.uk", "assembly.go.kr", "lawmaking.go.kr"];
 // 시리즈 영역(R13). 디스패처 브리프가 있는 영역 + go-develop.
 const SERIES = ["go-develop", "go-accounting", "go-ai", "go-compliance-and-legal", "go-control", "go-data-analytics", "go-economics", "go-esg", "go-finance", "go-hr", "go-leadership-negotiation", "go-marketing", "go-mis", "go-operations", "go-product", "go-project-management", "go-sales", "go-scm", "go-security", "go-startup-agile", "go-strategy", "go-valuation"];
 const STALE_DAYS = 395; // 13개월
