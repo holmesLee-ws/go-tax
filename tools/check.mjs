@@ -87,6 +87,7 @@ function checkSources(text, refs, today) {
       try { host = new URL(u).hostname; } catch { problems.push(`출처 ${m[1]}: URL 형식 오류`); continue; }
       if (!OFFICIAL_DOMAINS.some((d) => host === d || host.endsWith(`.${d}`))) problems.push(`출처 ${m[1]}: 공식 도메인 아님 ${host}`);
     }
+    if (/원문 미확인|재확인 대기/.test(m[2])) warnings.push(`출처 ${m[1]}: 원문 미확인 표시 — 다시 확인`);
     const d = m[2].match(/조회일 (\d{4}-\d{2}-\d{2})/);
     if (!d) { problems.push(`출처 ${m[1]}: 조회일 없음`); continue; }
     const age = (today - new Date(`${d[1]}T00:00:00Z`)) / 86400000;
