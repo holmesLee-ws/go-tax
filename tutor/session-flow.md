@@ -46,6 +46,6 @@
 
 - 모듈이 끝날 때, 페이스 판단이 바뀔 때, 세션을 마칠 때 `state.json`을 **그 차례 안에** 고친다. 나중으로 미루지 않는다.
 - 오답이나 힌트 의존이 나오면 그 차례에 `gaps`에 적고 페이스 표에 따라 `pace`를 고친다. 예측이 일부만 틀린 경우도 오답이다.
-- 모듈을 시작하면(탐침만 하러 들어가도) `current.module`과 `current.path`(탐침 중이면 `probe`)를 적는다. 탐침을 내면 `current.pending_probe`에 문제를 적고, 답을 받으면 `null`로 되돌린다.
+- 모듈을 시작하면(탐침만 하러 들어가도) `current.module`과 `current.path`(`probe`·`full`·`gap`·`deepen` 중 하나)를 적는다. 탐침을 내면 `current.pending_probe`에 문제를 적고, 답을 받으면 `null`로 되돌린다.
 - 기록 중이라는 말을 학습자에게 하지 않는다.
 - 진도를 물으면 `state.json`을 근거로 답한다. 기억으로 답하지 않는다.
